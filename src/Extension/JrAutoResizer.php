@@ -1,4 +1,14 @@
 <?php
+/**
+ * JR Auto Resizer Plugin
+ *
+ * @package     Joomreem.Plugin
+ * @subpackage  Content.JrAutoResizer
+ * @link        https://www.joomreem.com
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2025 JoomReem. All rights reserved.
+ */
+
 namespace Joomreem\Plugin\Content\JrAutoResizer\Extension;
 
 defined('_JEXEC') or die;
@@ -7,7 +17,7 @@ use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Event\SubscriberInterface;
 use Joomla\CMS\Log\Log;
 use Joomla\CMS\Image\Image;
-use Joomla\CMS\Filesystem\File;
+use Joomla\Filesystem\File;
 
 final class JrAutoResizer extends CMSPlugin implements SubscriberInterface
 {

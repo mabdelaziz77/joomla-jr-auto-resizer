@@ -33,4 +33,7 @@
             </fieldset>
         </fields>
     </config>
+    <updateservers>
+        <server type="extension" priority="1" name="JR Auto Resizer Updates">https://raw.githubusercontent.com/mabdelaziz77/joomla-jr-auto-resizer/main/plg_content_jrautoresizer.xml</server>
+    </updateservers>
 </extension>

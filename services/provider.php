@@ -1,4 +1,14 @@
 <?php
+/**
+ * JR Auto Resizer Service Provider
+ *
+ * @package     Joomreem.Plugin
+ * @subpackage  Content.JrAutoResizer
+ * @link        https://www.joomreem.com
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2025 JoomReem. All rights reserved.
+ */
+
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Extension\PluginInterface;
