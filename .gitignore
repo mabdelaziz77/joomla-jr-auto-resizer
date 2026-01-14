@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Distribution packages
+*.zip
+
+# Documentation/promotional files (keep in repo root but exclude generated ones)
+*.pdf
+
+# Temporary files
+*.tmp
+*.log
+jr_auto_resizer_box_1764844656775.png
+jr_auto_resizer_box_v2_1764844882118.png
+jr_auto_resizer_box_v3_1764845040847.png

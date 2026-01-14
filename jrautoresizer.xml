@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade" version="5.0">
+    <name>Content - JR Auto Resizer</name>
+    <author>Mohamed Abdelaziz</author>
+    <creationDate>December 2025</creationDate>
+    <copyright>Copyright (C) 2025 JoomReem. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>admin@joomreem.com</authorEmail>
+    <authorUrl>www.joomreem.com</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_CONTENT_JRAUTORESIZER_XML_DESCRIPTION</description>
+    <namespace path="src">Joomreem\Plugin\Content\JrAutoResizer</namespace>
+    <files>
+        <folder plugin="jrautoresizer">services</folder>
+        <folder>src</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_content_jrautoresizer.ini</language>
+        <language tag="en-GB">language/en-GB/plg_content_jrautoresizer.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="max_width_intro" type="number" default="400" label="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_INTRO_LABEL" description="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_INTRO_DESC" />
+                <field name="max_width_intro_small" type="number" default="200" label="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_INTRO_SMALL_LABEL" description="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_INTRO_SMALL_DESC" />
+                <field name="max_width_full" type="number" default="800" label="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_FULL_LABEL" description="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_FULL_DESC" />
+                <field name="max_width_full_small" type="number" default="400" label="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_FULL_SMALL_LABEL" description="PLG_CONTENT_JRAUTORESIZER_MAX_WIDTH_FULL_SMALL_DESC" />
+                <field name="quality" type="number" default="80" min="0" max="100" label="PLG_CONTENT_JRAUTORESIZER_QUALITY_LABEL" description="PLG_CONTENT_JRAUTORESIZER_QUALITY_DESC" />
+                <field name="keep_original" type="radio" default="0" label="PLG_CONTENT_JRAUTORESIZER_KEEP_ORIGINAL_LABEL" description="PLG_CONTENT_JRAUTORESIZER_KEEP_ORIGINAL_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
