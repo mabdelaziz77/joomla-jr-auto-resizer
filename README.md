@@ -1,96 +1,51 @@
-# JR Auto Resizer - Joomla 5 Plugin
+<p align="center">
+  <img src="https://joomreem.com/images/new_logo.png" alt="JoomReem Logo" width="200">
+</p>
 
-![Joomla](https://img.shields.io/badge/Joomla-5.x-blue?logo=joomla)
-![PHP](https://img.shields.io/badge/PHP-8.1+-purple?logo=php)
-![License](https://img.shields.io/badge/License-GPLv2+-green)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange)
+# Joomla JR Auto Resizer
+### Automatically resize and optimize uploaded images in Joomla.
 
-A Joomla 5 content plugin that **automatically resizes and converts article images to WebP format** when saving articles. Improve your website's performance and PageSpeed scores with optimized images!
+[![GitHub Sponsor](https://img.shields.io/badge/Sponsor-GitHub-pink?logo=github)](https://github.com/sponsors/mabdelaziz77)
+[![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](LICENSE)
 
-## ✨ Features
-
-- 🖼️ **Automatic Image Resizing** - Resizes Intro and Full Article images on save
-- 🌐 **WebP Conversion** - Converts images to modern WebP format for better compression
-- 📐 **Multiple Sizes** - Generates both standard and small versions for responsive srcset
-- ⚡ **Performance Boost** - Smaller file sizes = faster page loads
-- 🎛️ **Configurable** - Set custom dimensions and quality for each image type
-- 🗑️ **Optional Cleanup** - Option to delete original files after optimization
-
-## 📋 Requirements
-
-- Joomla 5.0 or higher
-- PHP 8.1 or higher
-- GD Library with WebP support
-
-## 📦 Installation
-
-1. Download the latest release ZIP file
-2. In Joomla Admin, go to **System → Install → Extensions**
-3. Upload and install the plugin package
-4. Go to **System → Manage → Plugins**
-5. Search for "JR Auto Resizer" and enable it
-
-## ⚙️ Configuration
-
-Navigate to **System → Manage → Plugins → Content - JR Auto Resizer** to configure:
-
-| Option | Default | Description |
-|--------|---------|-------------|
-| **Max Width Intro** | 400px | Maximum width for intro images |
-| **Max Width Intro Small** | 200px | Width for small intro images (srcset) |
-| **Max Width Full** | 800px | Maximum width for full article images |
-| **Max Width Full Small** | 400px | Width for small full images (srcset) |
-| **WebP Quality** | 80 | Compression quality (0-100) |
-| **Keep Original File** | No | Keep or delete original after optimization |
-
-## 🔧 How It Works
-
-1. When you save an article in Joomla, the plugin hooks into the `onContentBeforeSave` event
-2. It checks for Intro Image and Full Article Image fields
-3. For each image, it:
-   - Resizes to the configured maximum width (if larger)
-   - Converts to WebP format
-   - Generates a smaller version for responsive images
-4. Updates the article's image paths to point to the new optimized files
-5. Optionally deletes the original file to save disk space
-
-### Generated Files
-
-For an original image `my-image.jpg`, the plugin creates:
-- `my-image_intro.webp` - Optimized intro image
-- `my-image_intro_small.webp` - Small intro image for srcset
-- `my-image_full.webp` - Optimized full article image
-- `my-image_full_small.webp` - Small full image for srcset
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 💖 Support This Project
-
-If you find this plugin useful, consider supporting its development:
-
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-pink?logo=github)](https://github.com/sponsors/mabdelaziz77)
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue?logo=paypal)](https://paypal.me/mabdelaziz77)
-
-## 📄 License
-
-This project is licensed under the GNU General Public License v2.0 or later - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Mohamed Abdelaziz** - [JoomReem](https://www.joomreem.com)
-
-- Website: [joomreem.com](https://www.joomreem.com)
-- Email: admin@joomreem.com
-- GitHub: [@mabdelaziz77](https://github.com/mabdelaziz77)
+**Maintained by Mohamed Abdelaziz, Founder of [JoomReem.com](https://www.joomreem.com).**
 
 ---
 
-Made with ❤️ for the Joomla community
+## 🚀 Stop Bloating Your Website
+
+Uploading raw images straight from a camera or smartphone often results in files ranging from **5MB to 20MB+**. This kills your website's performance, destroys your Core Web Vitals, and frustrates your users on mobile connections.
+
+**JR Auto Resizer** is a native Joomla plugin that intercepts these uploads. It automatically resizes and optimizes your images to specific dimensions and converts them to modern formats (like WebP) the moment you click save. 
+
+**Keep your site fast without changing your workflow.**
+
+## ✨ Features
+
+- **Native Joomla Integration**: Works seamlessly with Joomla 5's content events. No complex setup or third-party dependencies required.
+- **Customizable Precision**: Define exactly how you want your images handled. Set your preferred max-width, quality levels, and formats for both Intro and Full Article images.
+- **Non-Destructive Processing**: Choose whether to keep your original high-resolution uploads or delete them to save disk space.
+- **Modern Standards**: Automatically generates WebP versions and small variants for responsive `srcset` support.
+
+## 📦 Installation & Usage
+
+1. **Download**: Grab the latest release ZIP.
+2. **Install**: In your Joomla Administrator, go to **System → Install → Extensions** and upload the ZIP.
+3. **Enable**: Go to **System → Plugins**, search for "JR Auto Resizer," and enable it.
+4. **Configure**: Click into the plugin settings to set your desired widths (e.g., 800px for full, 400px for intro) and compression quality.
+
+Once enabled, simply upload your images as usual. The plugin handles the optimization automatically on the next article save.
+
+---
+
+## 🏗️ Need Custom Automation?
+
+I specialize in building high-performance Joomla ecosystems. If you need more than just image resizing, I can help you automate your entire business workflow.
+
+**I specialize in connecting Joomla with n8n and AI to automate complex business workflows.**
+
+- 🔗 **Hire me at [JoomReem.com](https://www.joomreem.com)**
+- 💖 **[Sponsor this project on GitHub](https://github.com/sponsors/mabdelaziz77)**
+
+---
+*Optimizing the web, one image at a time.*
