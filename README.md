@@ -12,7 +12,7 @@
 
 ---
 
-## 🚀 Stop Bloating Your Website
+## 🚀 The Hook: Stop Bloating Your Website
 
 Uploading raw images straight from a camera or smartphone often results in files ranging from **5MB to 20MB+**. This kills your website's performance, destroys your Core Web Vitals, and frustrates your users on mobile connections.
 
@@ -32,9 +32,13 @@ Uploading raw images straight from a camera or smartphone often results in files
 1. **Download**: Grab the latest release ZIP.
 2. **Install**: In your Joomla Administrator, go to **System → Install → Extensions** and upload the ZIP.
 3. **Enable**: Go to **System → Plugins**, search for "JR Auto Resizer," and enable it.
-4. **Configure**: Click into the plugin settings to set your desired widths (e.g., 800px for full, 400px for intro) and compression quality.
+4. **Configure**: Click into the plugin settings to set your desired widths and compression quality.
 
-Once enabled, simply upload your images as usual. The plugin handles the optimization automatically on the next article save.
+---
+
+### 📷 Configuration Preview
+
+![JR Auto Resizer Configuration](https://github.com/user-attachments/assets/d5332ea0-848d-4c98-8924-76d37f397671)
 
 ---
 
